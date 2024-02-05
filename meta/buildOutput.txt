@@ -1,0 +1,56 @@
+Started by user Sharath Tunuguntla
+Running as SYSTEM
+Building in workspace /Users/shar_tunu/.jenkins/workspace/jenkinsTestDemo-pytest
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /Users/shar_tunu/.jenkins/workspace/jenkinsTestDemo-pytest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gglavanya/JenkinsTestDemo-pyTest.git # timeout=10
+Fetching upstream changes from https://github.com/gglavanya/JenkinsTestDemo-pyTest.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.3 (Apple Git-145)'
+ > git fetch --tags --force --progress -- https://github.com/gglavanya/JenkinsTestDemo-pyTest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 4d669702485f674f4c313b114818f3c7be0a0957 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4d669702485f674f4c313b114818f3c7be0a0957 # timeout=10
+Commit message: "Update build"
+ > git rev-list --no-walk 4d669702485f674f4c313b114818f3c7be0a0957 # timeout=10
+[jenkinsTestDemo-pytest] $ /bin/sh -xe /var/folders/3p/wjzv_gtx43l98gzkjb1fvcn80000gn/T/jenkins9005660827965425824.sh
++ cd /Users/shar_tunu/Documents/GitHub/JenkinsTestDemo-pyTest
++ bash Python/scripts/build.sh
+created virtual environment CPython3.9.6.final.0-64 in 405ms
+  creator CPython3macOsFramework(dest=/Users/shar_tunu/Documents/GitHub/JenkinsTestDemo-pyTest/testEnv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/shar_tunu/Library/Application Support/virtualenv)
+    added seed packages: pip==23.3.2, setuptools==69.0.3, wheel==0.42.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Collecting pytest
+  Using cached pytest-8.0.0-py3-none-any.whl.metadata (7.8 kB)
+Collecting iniconfig (from pytest)
+  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting packaging (from pytest)
+  Using cached packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pluggy<2.0,>=1.3.0 (from pytest)
+  Using cached pluggy-1.4.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting exceptiongroup>=1.0.0rc8 (from pytest)
+  Using cached exceptiongroup-1.2.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting tomli>=1.0.0 (from pytest)
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Using cached pytest-8.0.0-py3-none-any.whl (334 kB)
+Using cached exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+Using cached pluggy-1.4.0-py3-none-any.whl (20 kB)
+Using cached packaging-23.2-py3-none-any.whl (53 kB)
+Installing collected packages: tomli, pluggy, packaging, iniconfig, exceptiongroup, pytest
+Successfully installed exceptiongroup-1.2.0 iniconfig-2.0.0 packaging-23.2 pluggy-1.4.0 pytest-8.0.0 tomli-2.0.1
+
+[notice] A new release of pip is available: 23.3.2 -> 24.0
+[notice] To update, run: pip install --upgrade pip
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.0.0, pluggy-1.4.0
+rootdir: /Users/shar_tunu/Documents/GitHub/JenkinsTestDemo-pyTest/Python
+collected 5 items
+
+Tests/test_math_utils.py .....                                           [100%]
+
+============================== 5 passed in 0.01s ===============================
+Finished: SUCCESS
