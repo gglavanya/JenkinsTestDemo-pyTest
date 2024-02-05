@@ -14,8 +14,8 @@
 
 - add the following commands in the command section
 ```
-cd scripts
-bash build.sh
+cd <path-to-repo>
+bash Python/scripts/build.sh
 ```
 
 ### Run the build after setting up the Jenkins
